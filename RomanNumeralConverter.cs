@@ -26,7 +26,7 @@ namespace RomanKataProject1
 
         public int ConvertAnAdditiveRomanNumeral(string aromannumeral) // let's try converting simple additive numerals first ...
         {
-            Console.WriteLine("\nOriginal Roman numeral        : " + aromannumeral);
+           // Console.WriteLine("\nOriginal Roman numeral        : " + aromannumeral);
 
             int totalarabicvalue = 0;
 
@@ -35,14 +35,14 @@ namespace RomanKataProject1
                 totalarabicvalue += FindValueOfRomanChar(aromannumeral[i]);
             }
 
-            Console.WriteLine("Converted to Arabic integer   : " + totalarabicvalue);
+            // Console.WriteLine("Converted to Arabic integer   : " + totalarabicvalue);
 
             return totalarabicvalue;
         }
 
         public int ConvertARomanNumeral(string aromannumeral) // now implement subtractive numerals ...
         {
-            Console.WriteLine("\nOriginal Roman numeral        : " + aromannumeral);
+            // Console.WriteLine("\nOriginal Roman numeral        : " + aromannumeral);
 
             int totalarabicvalue = 0;
 
@@ -67,14 +67,16 @@ namespace RomanKataProject1
                 }
             }
 
-            Console.WriteLine("Converted to Arabic integer   : " + totalarabicvalue);
+            // Console.WriteLine("Converted to Arabic integer   : " + totalarabicvalue);
 
             return totalarabicvalue;
         }
 
         /*******************************************************************
+         
+                    Some pseudocode to design a solution for the Arabic integer to roman Numeral conversion
 
-        num == Arabic Integer
+                    num == Arabic Integer
 
                     num >= 1000 ? : int = num / 1000
                                     append M int times, num -= (1000 * int)
@@ -110,10 +112,16 @@ namespace RomanKataProject1
 
          *******************************************************************/
 
+                // The long winded answer...
+
+                // This now needs making into an iterative loop, with a couple of fixed arrays of Roman 
+                // Numeral strings and decimal ints to use as a look up to build the converted output string/int.
+                // However, I've spent enough time on it!
 
                 public string ConvertAnArabicInteger(int anarabicinteger)
                 {
-                    Console.WriteLine("\nOriginal Arabic integer       : " + anarabicinteger);
+                    //Console.WriteLine("\nOriginal Arabic integer       : " + anarabicinteger);
+
                     StringBuilder romannumeralstring = new StringBuilder();
 
                     if (anarabicinteger >= 1000)
@@ -204,7 +212,7 @@ namespace RomanKataProject1
                         }
                     }
 
-                    Console.WriteLine("Converted to Roman numeral    : " + romannumeralstring);
+                    // Console.WriteLine("Converted to Roman numeral    : " + romannumeralstring);
 
                     return romannumeralstring.ToString();
                 }

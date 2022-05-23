@@ -38,7 +38,7 @@ Grand - it works.
 Decide your algorithm is too ungainly in size. Rewrite
 
 This now needs making into an iterative loop, with a couple of fixed arrays - 
-of Roman Numeral strings, and decimal ints to use as a look up to build the converted output string/int.
+of Roman Numeral strings, and decimal ints to use as a look up to build the converted output string/int:.
 
 However, I've spent enough time on it!
 

@@ -13,7 +13,6 @@ namespace RomanKataProject1
         [Test]
         public void Test1()
         {
-            /*
             // Try some simpler to compute 'additive' Roman numerals ...
 
             RomanNumeralConverter romannumeralconverter = new();
@@ -21,21 +20,18 @@ namespace RomanKataProject1
             romannumeralconverter.ConvertAnAdditiveRomanNumeral("MMDCLXVI").Should().Be(2666);
             romannumeralconverter.ConvertAnAdditiveRomanNumeral("MMMM").Should().Be(4000);
             romannumeralconverter.ConvertAnAdditiveRomanNumeral("I").Should().Be(1);
-            */
         }
 
         [Test]
         public void Test2()
         {
-            /*
             // Next, use the previous 'additive' test cases with with the 'subtractive' method ...
 
             RomanNumeralConverter romannumeralconverter = new();
 
             romannumeralconverter.ConvertARomanNumeral("MMDCLXVI").Should().Be(2666);
             romannumeralconverter.ConvertARomanNumeral("MMMM").Should().Be(4000);
-            romannumeralconverter.ConvertARomanNumeral("I").Should().Be(1);
-            */
+            romannumeralconverter.ConvertARomanNumeral("I").Should().Be(1);    
         }
 
         [Test]
