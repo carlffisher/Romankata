@@ -1,0 +1,49 @@
+Roman Numerals Kata
+-------------------
+-------------------
+
+
+Roman to Arabic
+---------------
+
+
+1. Use FluentAssrtions test with set of simpler 'additive' Roma Numerals data.
+
+That works. Good, now we've something to work with.
+
+2. Append the method so it can handle 'subtractive'numerals.
+
+3. Test with the previous 'additive' data.
+
+4. That works, now test with a set of 'subtractive' numerals.
+
+Bingo!
+
+
+Now for the reverse method - Arabic integers to Roman Numerals ...
+
+
+Arabic to Roman
+---------------
+
+1. Write some pseudo-code for the algorithm design and implement it.
+
+2. Test just one simple case to ensure the method accepts and returns something valid.
+
+3. Execute multiple test cases, especially ensuring all subtractive operations are covered.
+That'll be the 900s, 400s, 90s, 40s, 9s, 4s.
+
+Grand - it works.
+
+Decide your algorithm is too ungainly in size. Rewrite
+
+This now needs making into an iterative loop, with a couple of fixed arrays - 
+of Roman Numeral strings, and decimal ints to use as a look up to build the converted output string/int.
+
+However, I've spent enough time on it!
+
+
+
+
+
+
